@@ -1,0 +1,142 @@
+.free-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.free-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+.board-tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.search-filter-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.free-write-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2e6ff2;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.free-write-button:hover {
+  background-color: #1f56cc;
+}
+
+.free-section {
+  margin-top: 16px;
+}
+
+.free-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 602px;
+}
+
+.free-list-item {
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.free-item-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.free-item-date {
+  font-size: 13px;
+  color: #888;
+  white-space: nowrap;
+}
+
+.free-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.free-page-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e6e6e6;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.free-page-button.active-page {
+  background-color: #2e6ff2;
+  color: white;
+  font-weight: bold;
+}
+
+.free-page-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.free-button-box {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* Responsive Behavior */
+@media (max-width: 600px) {
+  .free-item-title {
+    font-size: 14px;
+  }
+
+  .free-item-date {
+    font-size: 12px;
+  }
+
+  .free-write-button,
+  .search-filter-select {
+    width: 100%;
+  }
+
+  .board-tab-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .free-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .free-pagination {
+    flex-direction: column;
+  }
+}
